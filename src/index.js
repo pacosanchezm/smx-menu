@@ -11,7 +11,7 @@ import React from 'react';
 // This component requires prop-types
 import PropTypes from 'prop-types';
 
-import './MyCoolButton.css';
+import './styles.css';
 
 const MyCoolButton = ({ type, title, onClick }) => (
   <button
