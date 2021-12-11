@@ -1,6 +1,6 @@
 // Replace this file with your actual React component
 
-// This component also requires 'react',
+// This component also requires 'react'
 // but it has already been included in the
 // list of dependencies in package.json
 
