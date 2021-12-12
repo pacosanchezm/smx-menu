@@ -1,5 +1,6 @@
 import React from "react"
 
+import Menuxa from "../src/index"
 
 
 let App;
@@ -12,7 +13,7 @@ export default (App = props => {
 
     <div id="App">
 
-    hola
+      <Menuxa title="Click Mas!"/>
 
     </div>
 
