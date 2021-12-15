@@ -1,8 +1,8 @@
 {
   "name": "smx-menu-s",
-  "version": "0.1.0",
+  "version": "0.1.2",
   "description": "",
-  "main": "./src/index.js",
+  "main": "./lib/index.js",
   "license": "MIT",
   "scripts": {
     "build": "webpack"
