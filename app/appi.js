@@ -10,7 +10,14 @@ const StateContext = createContext();
 
 
 
-
+const MiMenu = {
+  Main: {
+    m1: {title: "Empresando", href: "https://www.empresando.com/quienessomos", sub: 0},
+    m2: {title: "Historias", href: "https://www.empresando.com/posts", sub: 0},
+    m3: {title: "Cuéntanos tu historia", href: "https://www.empresando.com/tuhistoria", sub: 0},
+    m4: {title: "Mi cuenta", sub: 1}
+  }
+}
 
 
 
@@ -49,9 +56,14 @@ const Body = props => {
 // ------------
   try {
     return (
-      <Menu title="Click Mas!"
+      <Menu 
+        title="Click Mas!"
         useContext={useContext(StateContext)}
-      // useAcciones = {useacciones}
+        // useAcciones = {useacciones}
+        menus={MiMenu}
+        backgroundColor={"#152f6a"}
+        textColor={"white"}
+        hoverColor={"#b8d637"}
       />
     )
   } catch (e) {
@@ -66,16 +78,12 @@ const Body = props => {
 export default (App = props => {
 
 
-
-
-
   return (
 
     <div id="App">
       <ContextProvider>
         <Body {...props} />
-
-    </ContextProvider>
+      </ContextProvider>
     </div>
 
   )

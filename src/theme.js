@@ -753,6 +753,17 @@ export default {
 
     },
 
+    menu2: (color, hover) => {
+      return ( {
+        ml: 3,
+        fontSize: 2,
+        fontFamily: "body",
+        fontWeight: "bold",
+        color: color,
+        textDecoration: "none",
+        ':hover': { color: hover}
+      })
+    },
 
 
   }

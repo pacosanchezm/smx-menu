@@ -228,11 +228,15 @@ const Body = props => {
   const [MenuSelected, setMenuSelected] = props.useContext.Menu.Selected
   const [onMenu, setonMenu] = props.useContext.Menu.onMenu
 
+  const menus = props.menus
+
+
   try {
+
     return (
 
       <div
-        sx={{ width: "100%", bg:"#152f6a" }} bg="#152f6a"
+        sx={{ width: "100%", bg: props.backgroundColor }} 
         onMouseOver={() => { setonMenu(true)}}
         onMouseLeave={() => { 
           setonMenu(false)
@@ -248,12 +252,12 @@ const Body = props => {
             }}
           >
 
-            <Link2 sx={Estilo.menu1}
-              to='/quienessomos' 
-              href={"https://www.empresando.com/quienessomos"}
+            <Link2 sx={Estilo.menu2(props.textColor, props.hoverColor)}
+              //to='/quienessomos' 
+              href={menus.Main.m1.href}
               onMouseOver={() => { setMenuSelected(1)}}
             >
-              Empresando
+              {menus.Main.m1.title}
             </Link2>
 
             <Link2 sx={Estilo.menu1}
@@ -328,64 +332,5 @@ export default (App = props => {
 });
 
 // -------------------------------------------------------------------------------
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// const MyCoolButton = ({ type, title, onClick }) => (
-//   <button
-//     type={type}
-//     className="container"
-//     onClick={onClick}
-//   >
-//     {title}
-//   </button>
-// );
-
-// MyCoolButton.propTypes = {
-//   title: PropTypes.string.isRequired,
-//   type: PropTypes.string,
-//   onClick: PropTypes.func,
-// };
-
-// MyCoolButton.defaultProps = {
-//   type: 'button',
-//   onClick: () => {},
-// };
-
-// export default MyCoolButton;
-
 
 
