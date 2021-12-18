@@ -2,9 +2,10 @@
   "name": "smx-menu-s",
   "version": "0.1.2",
   "description": "",
-  "main": "./lib/index.js",
+  "main": "./app/index.js",
   "license": "MIT",
   "scripts": {
+    "start": "react-scripts start",
     "build": "webpack"
   },
   "peerDependencies": {
@@ -16,20 +17,34 @@
   },
   "devDependencies": {
     "babel-core": "^6.21.0",
-    "babel-loader": "^7.1.4",
     "babel-preset-env": "^1.6.1",
     "babel-preset-react": "^6.16.0",
     "babel-preset-stage-0": "^6.24.1",
+    "@babel/runtime": "7.13.8",
+
     "css-loader": "^3.5.1",
     "path": "^0.12.7",
     "prop-types": "^15.6.0",
     "react": "^16.0.0",
     "react-dom": "^16.0.0",
+    "react-scripts": "4.0.0",
     "style-loader": "^1.1.3",
     "webpack": "^4.5.0",
     "@reach/router": "1.3.4",
     "theme-ui": "0.12.1",
     "webpack-cli": "^3.2.1"
   },
-  "keywords": []
+  "keywords": [],
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
 }
